@@ -1,0 +1,17 @@
+server:
+  port: 8763
+
+spring:
+  application:
+    name: service-hi
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      
+      
+      
+#多实例启动
+#run config 里添加参数：--spring.profiles.active=two
+#wangang 2020.02.06
